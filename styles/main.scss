@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+    background-color: white;
+    perspective: 900px;
+    overflow: hidden;
+}
+.hidden { opacity:0; }
+controls {
+    font-size: 12px;opacity:0.3;
+}
+controls:hover{ opacity:1;}
+symbol {
+    font-size: 120px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    opacity:0;
+}
+comment {
+    background-color: #222;
+}
+
+#name { color: #EC7600; font-size: 120px;}
+#title { color: #AC5600; font-size: 100px;}
+#title{ transform:translateY(20px);}
+
+.s1 {
+  #name{ opacity:1;}
+}
+.s2 {
+  #name{ transform:translateY(-100px);}
+  #title{ opacity:1;transform:translateY(0px);}
+}
+.s3 {
+  #name{ opacity:0;transform:translateY(-300px);}
+  #title{ opacity:0;transform:translateY(-200px);transition-delay: 0.2s;}
+}
